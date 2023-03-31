@@ -61,4 +61,4 @@ class DBhelper:
         self.con.commit()
         print(UserId," Updeted Done\n")
 
-        6
+        
