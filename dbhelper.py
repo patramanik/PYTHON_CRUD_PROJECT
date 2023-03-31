@@ -9,7 +9,7 @@ class DBhelper:
                   password='',
                   database='py_db'
                   )
-        query='create table if not exists user(userId int primary key,Uname varchar(200),phone varchar(12))'
+        query='create table if not exists user(userId int primary key,Uname varchar(200),phone varchar(10))'
         cur=self.con.cursor()
         cur.execute(query)
         print("\nTable Created\n")
@@ -61,21 +61,4 @@ class DBhelper:
         self.con.commit()
         print(UserId," Updeted Done\n")
 
-        
-
-
-
-
-
-
-# main coding
-helper=DBhelper()
-# helper.insert_user(1,'Manik Patra',8158021116)
-# helper.insert_user(6,'Arko Shamonta',8159200438)
-# helper.fetch_all()
-# input=input("Enter User Id : ")
-# helper.fatch_one(input)
-# helper.delete_user(input)
-# helper.updet_user(6,'Arko Prava Shamanta',8918327205)
-
-
+        6
